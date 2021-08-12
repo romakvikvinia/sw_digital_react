@@ -19,7 +19,7 @@ export const useResponsive = ():IUseResponsive=>{
   });
   useEffect(() => {
     // Handler to call on window resize
-    function handleResize() {
+    function handleResize():void {
       // Set window width/height to state
       setState({
         width: window.innerWidth,
